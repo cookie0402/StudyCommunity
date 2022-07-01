@@ -2,6 +2,8 @@ package study.community.chenqian.dto;
 
 public class GithubUser {
 
+
+
     private String name;
     private long id;
 
@@ -20,6 +22,13 @@ public class GithubUser {
 
     public void setName(String name) {
         this.name = name;
+    }
+    @Override
+    public String toString() {
+        return "GithubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                '}';
     }
 
 }
