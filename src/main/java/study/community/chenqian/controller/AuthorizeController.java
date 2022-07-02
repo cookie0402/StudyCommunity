@@ -12,8 +12,8 @@ import study.community.chenqian.mapper.UserMapper;
 import study.community.chenqian.model.User;
 import study.community.chenqian.provider.GithubProvider;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.Cookie;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.UUID;
@@ -36,7 +36,7 @@ public class AuthorizeController {
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code") String code,
                            @RequestParam(name = "state") String state,
-                           HttpServletRequest request, HttpServletResponse response) throws IOException {
+                           HttpServletResponse response) throws IOException {
         AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
         accessTokenDTO.setClient_id(clientId);
         accessTokenDTO.setClient_secret(clientSecret);
@@ -53,13 +53,19 @@ public class AuthorizeController {
 
             user.setName(githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId()));
-            user.setToken(UUID.randomUUID().toString());
+
+            String token = UUID.randomUUID().toString();
+            user.setToken(token);
+
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
             userMapper.insert(user);
+            response.addCookie(new Cookie("token",token));
+
+
             // 登录成功，写cookie 和session
-            request.getSession().setAttribute("user", user);
-            request.getSession().setAttribute("user", githubUser);
+//            request.getSession().setAttribute("user", user);
+//            request.getSession().setAttribute("user", githubUser);
             return "redirect:/";
         } else {
             response.sendRedirect("/");

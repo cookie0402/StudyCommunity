@@ -15,6 +15,8 @@ This is a study community web using springboot
 
 [MyBaties](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
 
+[FlyWay](https://flywaydb.org/documentation/getstarted/firststeps/maven)
+
 ## Scripts
 ```sql
 create table USER_INFO
@@ -33,5 +35,8 @@ create unique index USER_INFO_ID_UINDEX
     on USER_INFO (ID);
 
 ```
-
-
+## 快捷键
+1. 抽取变量快捷键: command+alt+v
+2. 生成 getter/setter 函数: command+n
+3. 快速查找文件: shift 两次
+4. 
