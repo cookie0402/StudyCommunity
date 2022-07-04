@@ -48,7 +48,7 @@ public class AuthorizeController {
 
         System.out.println(githubUser.getName());
 
-        if (githubUser != null) {
+        if (githubUser != null ) {
             User user = new User();
 
             user.setName(githubUser.getName());

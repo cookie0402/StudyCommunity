@@ -35,6 +35,9 @@ create unique index USER_INFO_ID_UINDEX
     on USER_INFO (ID);
 
 ```
+```bash
+mvn flyway:migrate
+```
 ## 快捷键
 1. 抽取变量快捷键: command+alt+v
 2. 生成 getter/setter 函数: command+n
