@@ -3,6 +3,8 @@ This is a study community web using springboot
 ## Resources
 [spring 文档](https://spring.io/guides/gs/serving-web-content/)
 
+[Springboot-doc](https://docs.spring.io/spring-boot/docs/2.1.13.RELEASE/reference/html/boot-features-sql.html)
+
 [github SSH](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 [bootstrap 文档](https://www.bootcss.com)
@@ -11,11 +13,15 @@ This is a study community web using springboot
 
 [OkHttp3](https://square.github.io/okhttp/#releases)
 
-[Springboot-doc](https://docs.spring.io/spring-boot/docs/2.1.13.RELEASE/reference/html/boot-features-sql.html)
+
 
 [MyBaties](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
 
 [FlyWay](https://flywaydb.org/documentation/getstarted/firststeps/maven)
+
+[Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-value-to-specific-attributes)
+
+[Lombok](https://projectlombok.org/setup/maven)
 
 ## Scripts
 ```sql

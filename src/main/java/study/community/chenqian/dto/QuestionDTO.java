@@ -1,9 +1,9 @@
-package study.community.chenqian.model;
+package study.community.chenqian.dto;
 
 import lombok.Data;
-
+import study.community.chenqian.model.User;
 @Data
-public class Question {
+public class QuestionDTO {
     private Integer id;
     private String title;
     private String description;
@@ -14,4 +14,5 @@ public class Question {
     private Integer view_count;
     private Integer comment_count;
     private Integer like_count;
+    private User user;
 }

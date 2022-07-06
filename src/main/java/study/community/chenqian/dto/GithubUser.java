@@ -1,43 +1,14 @@
 package study.community.chenqian.dto;
 
+import lombok.Data;
+
+@Data
 public class GithubUser {
-
-
-
     private String name;
     private long id;
     private String bio;
-
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
+    private String avatar_url;
 
 
-    public void setName(String name) {
-        this.name = name;
-    }
-    @Override
-    public String toString() {
-        return "GithubUser{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                '}';
-    }
 
 }
