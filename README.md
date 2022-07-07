@@ -4,6 +4,7 @@ This is a study community web using springboot
 [spring 文档](https://spring.io/guides/gs/serving-web-content/)
 
 [Springboot-doc](https://docs.spring.io/spring-boot/docs/2.1.13.RELEASE/reference/html/boot-features-sql.html)
+[Spring Intercption](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-handlermapping-interceptor)
 
 [github SSH](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
